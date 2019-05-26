@@ -1,57 +1,65 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.awt.SystemTray;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.Supplier;
-
-/**
- * Writeloops get you thinking about how to do different things with loops.
- *
- * @author anonymous coward
- * @version -0.3
- * 
- */
-public class WriteLoops {
-
-    private static final int _3 = 3;
-
-    public int oneToFive() {
+`=    //import com.sun.org.apache.xpath.internal.SourceTree;
+    
+    import java.awt.SystemTray;
+    import java.util.concurrent.ThreadLocalRandom;
+    import java.util.function.Supplier;
+    
+    /**
+     * Writeloops get you thinking about how to do different things with loops.
+     *
+     * @author anonymous coward
+     * @version -0.3
+     * 
+     */
+    public class WriteLoops {
+    
+        private static final int _3 = 3;
+    
+        public int oneToFive() {
+            int w = 0;
+            int i;
+                for (i = 1; i <= 5; i++){ 
+            // Write a FOR loop that counts from 1 to 10.
+                // calling
+                w += 1;
+            }
+                // each time through the loop
+    
+            // this will tell the test how many times the loop executed.
+            return w;
+        }
+    
+        public int oneToTen() {
         int w = 0;
-
-        // Write a FOR loop that counts from 1 to 10.
-            // calling
-            w = w + 1;
-            // each time through the loop
-
-        // this will tell the test how many times the loop executed.
-        return w;
-    }
-
-    public int oneToTen() {
-        int w = 0;
-
+        int i;
+        
+        for (i = 1; i <= 10; i++) {
         // Write a FOR loop that counts from 1 to 10.
         // calling
-        w = w + 1;
+        w += 1;
+        }
         // each time through the loop
         
         return w;
-    }
+        }
 
-    public int startAtTwentyOne() {
+        public int startAtTwentyOne() {
         int w = 0;
-
+        int i;
+        for(i = 1; i <= 21; i++) {
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
-        w = w + 1;
+        w += 1;
+        }
         // each time through the loop
         
         return w;
-    }
+        }
 
-    public int countDown() {
+        public int countDown() {
         int w = 0;
-
+        int i;
+       
         // Write a FOR loop that counts down from 100 to 0.
         // calling
         w = w + 1;
