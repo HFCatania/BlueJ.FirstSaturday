@@ -1,4 +1,4 @@
-`=    //import com.sun.org.apache.xpath.internal.SourceTree;
+    //import com.sun.org.apache.xpath.internal.SourceTree;
     
     import java.awt.SystemTray;
     import java.util.concurrent.ThreadLocalRandom;
@@ -46,7 +46,7 @@
         public int startAtTwentyOne() {
         int w = 0;
         int i;
-        for(i = 1; i <= 21; i++) {
+        for(i = 21; i <= 31; i++) {
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
         w += 1;
@@ -59,43 +59,52 @@
         public int countDown() {
         int w = 0;
         int i;
-       
+        for(i = 100; i >= 1; i--){
         // Write a FOR loop that counts down from 100 to 0.
         // calling
-        w = w + 1;
+        w += 1;
         // each time through the loop
-        
+        }
         return w;
     }
 
     public int byTwoTo32() {
         int w = 0;
-
+        int i;
+        for(i = 0; i <= 32; i = i + 2){
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
-        w = w + 1;
+        //w += 1;
         // each time through the loop
+    }
         return w;
     }
 
     public int countDownFrom5000() {
         int w = 0;
-
+        int i; 
+        for(i = 1; i <= 5001; i += 11){
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
-        w = w + 1;
+          w = w + 1;
         // each time through the loop
-        
+        }
         return w;
     }
 
     public int nestedFors() {
         int w = 0;
-
+        int i;
+        int j;
+        for(i = 0; i < 20; i++){
+            for(j = 0; i < 5; i++){
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
                 // calling
-                w = w + 1;
+                
+            }
+            w = w + 1;
+        }
                 // each time through the inner loop
 
         return w;
